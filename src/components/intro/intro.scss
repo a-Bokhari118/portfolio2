@@ -1,0 +1,112 @@
+.intro {
+  background-color: white;
+  display: flex;
+
+  .left {
+    flex: 0.5;
+    background: linear-gradient(
+      to right,
+      rgba(36, 36, 83, 0.2),
+      rgba(81, 81, 195, 0.2)
+    );
+    border-bottom-right-radius: 10%;
+    border-top-right-radius: 10%;
+
+    .imgContainer {
+      width: 867px;
+      height: 867px;
+      overflow: hidden;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        height: 100%;
+      }
+    }
+  }
+  .right {
+    flex: 0.5;
+    position: relative;
+    .wrapper {
+      width: 100%;
+      height: 100%;
+      padding-left: 50px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      h1 {
+        font-size: 80px;
+        margin: 10px 0;
+      }
+      h2 {
+        font-size: 34px;
+      }
+      h3 {
+        font-size: 30px;
+
+        span {
+          font-size: inherit;
+          color: crimson;
+        }
+      }
+    }
+    a {
+      position: absolute;
+      bottom: 10px;
+      left: 40%;
+      img {
+        width: 30px;
+        animation: arrowBlink 2s infinite;
+      }
+      @keyframes arrowBlink {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-20px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+    }
+
+    .fun {
+      .fun1 {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        background-color: lightgreen;
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        opacity: 30%;
+      }
+
+      .fun2 {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        background-color: lightsalmon;
+        position: absolute;
+        bottom: 30px;
+        right: 80px;
+        opacity: 30%;
+      }
+
+      .fun3 {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        background-color: lightskyblue;
+        position: absolute;
+        bottom: 80px;
+        right: 20px;
+        opacity: 30%;
+      }
+    }
+  }
+}
